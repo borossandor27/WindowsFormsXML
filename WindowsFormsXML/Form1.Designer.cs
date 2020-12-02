@@ -41,6 +41,8 @@ namespace WindowsFormsXML
             this.listBox_Valutak = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.listBox_Konyvek = new System.Windows.Forms.ListBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -63,6 +65,8 @@ namespace WindowsFormsXML
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.listBox_Konyvek);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -162,6 +166,25 @@ namespace WindowsFormsXML
             this.label4.TabIndex = 2;
             this.label4.Text = "Az xml fájl: http://www.ecb.int/stats/eurofxref/eurofxref-daily.xml";
             // 
+            // listBox_Konyvek
+            // 
+            this.listBox_Konyvek.Dock = System.Windows.Forms.DockStyle.Left;
+            this.listBox_Konyvek.FormattingEnabled = true;
+            this.listBox_Konyvek.Location = new System.Drawing.Point(3, 52);
+            this.listBox_Konyvek.Name = "listBox_Konyvek";
+            this.listBox_Konyvek.Size = new System.Drawing.Size(265, 369);
+            this.listBox_Konyvek.TabIndex = 1;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(268, 52);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(521, 369);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Kiválasztott könyv adatai";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +216,8 @@ namespace WindowsFormsXML
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listBox_Valutak;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListBox listBox_Konyvek;
     }
 }
 
